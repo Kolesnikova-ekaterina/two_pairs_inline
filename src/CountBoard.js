@@ -8,7 +8,7 @@ function CountBoard(props){
   return(
     <div className="customlist">
     <div className="sideboard countboard">
-        Found paires: {props.count}
+        Found pairs: {props.count}
       </div>
      
       <div className="sideboard countboard">
