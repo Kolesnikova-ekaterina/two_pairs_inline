@@ -12,7 +12,9 @@
 </div>
 ## ✦ Скриншот
 
-![Скриншот приложения](screenshots/1.jpg)
+![Скриншот приложения 1](screenshots/1.jpg)
+
+![Скриншот приложения 2](screenshots/2.jpg)
 
 
 <div align="right">

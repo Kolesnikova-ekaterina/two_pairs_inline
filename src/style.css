@@ -58,8 +58,8 @@ body {
   justify-content: center; 
   align-items: center;     
   height: 100vh;           
-  gap: 20px;               
-  padding: 20px;
+  gap: 40px;               
+  padding: 40px;
   box-sizing: border-box;
 }
 
@@ -80,13 +80,17 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+.customlist {       
 
+}
 .welcomeboard {
   background-image: url('../public/board.jpg'); 
 }
 
 .countboard {
   background-image: url('../public/board.jpg'); 
+  height: 35vh; 
+  margin: 40px;
 }
 .boardtext{
     opacity: 1.0;
