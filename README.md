@@ -15,6 +15,8 @@
 ![Скриншот приложения](screenshots/1.jpg)
 
 
-    <div class="author">
-      Автор: <a href="https://github.com/Kolesnikova-ekaterina">Kolesnikova-ekaterina</a>
-    </div>
+<div align="right">
+
+Автор: [Kolesnikova-ekaterina](https://github.com/Kolesnikova-ekaterina)
+
+</div>
