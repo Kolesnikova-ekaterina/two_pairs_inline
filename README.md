@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Парные карты — Веб-приложение на React</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Georgia', serif;
+      padding: 50px 20px;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #1c1c1c;
+      border: 2px solid #4b4b4b;
+      border-radius: 16px;
+      padding: 40px 50px;
+      box-shadow: 0 0 30px #440000aa;
+    }
+    h1, h2 {
+      font-family: 'UnifrakturCook', cursive;
+      text-align: center;
+      color: #bb0000;
+      text-shadow:
+        2px 2px 4px #330000,
+        0 0 10px #ff0000cc;
+      margin-bottom: 0.5em;
+    }
+    h1 {
+      font-size: 3.2rem;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2.5em;
+      border-bottom: 2px solid #660000;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p, li {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+    ul, ol {
+      margin-left: 1.4em;
+    }
+    ul li, ol li {
+      margin-bottom: 0.7em;
+    }
+    .feature-list li {
+      padding-left: 0.5em;
+      position: relative;
+    }
+    .feature-list li::before {
+      content: "✦";
+      color: #bb0000;
+      position: absolute;
+      left: -1.2em;
+      font-weight: bold;
+    }
+    .screenshot {
+      display: block;
+      margin: 30px auto;
+      border-radius: 12px;
+      border: 3px solid #660000;
+      box-shadow: 0 0 20px #bb0000cc;
+      max-width: 100%;
+      width: 420px;
+    }
+    code {
+      background: #330000;
+      color: #ff9999;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    a {
+      color: #ff4444;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .author {
+      margin-top: 3em;
+      font-size: 1rem;
+      color: #aa4444;
+      text-align: right;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Парные карты</h1>
+    <p>
+      <strong>Это веб‑приложение для подбора парных карт,</strong> созданное на <b>JavaScript</b> и <b>React</b>.<br />
+      Тренируйте память, находите пары и погружайтесь в атмосферу сказок!
+    </p>
 
-## Available Scripts
 
-In the project directory, you can run:
+    <h2>Скриншот</h2>
+    <img src="screenshots/1.jpg" alt="Скриншот приложения" class="screenshot" />
 
-### `npm start`
+    <h2>Запуск проекта</h2>
+    <ol>
+      <li>Клонируйте репозиторий:<br />
+        <code>git clone https://github.com/your-username/your-repo.git</code>
+      </li>
+      <li>Установите зависимости:<br />
+        <code>npm install</code>
+      </li>
+      <li>Запустите приложение:<br />
+        <code>npm start</code>
+      </li>
+      <li>Откройте <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> в браузере.</li>
+    </ol>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    <div class="author">
+      Автор: <a href="https://github.com/Kolesnikova-ekaterina">Kolesnikova-ekaterina</a>
+    </div>
+  </div>
+</body>
+</html>
